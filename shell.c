@@ -1,3 +1,4 @@
+//LEONE DUARTE DE OLIVEIRA
 #include "shell.h"
 void exibir(int *vetor, int tamanho){
 	int contador;	
@@ -19,7 +20,7 @@ void shell_sort(int *vetor, int tamanho){
 		contador=0;
 		final =0;			
 		while(final < tamanho && contador < tamanho ){		
-		//COMPARANDO AS POSI«OES, USANDO O INTERVALO COMO DISTANCIA ENTRE AS POSI«’ES
+		//COMPARANDO AS POSI√áOES, USANDO O INTERVALO COMO DISTANCIA ENTRE AS POSI√á√ïES
 			if(vetor[contador] > vetor[contador + intervalo] ){		
 					aux_troca = vetor[contador];
 					vetor[contador] = vetor[contador + intervalo];
@@ -33,7 +34,7 @@ void shell_sort(int *vetor, int tamanho){
 		intervalo = intervalo/2;
 	}
 	
-		//CASO JA ESTEJA NO UM N√O E MAIS PRECISO CONTINUAR DIVIDINDO AI E FEITO O INSERTION PARA TERMINAR A ORGANIZA«√O
+		//CASO JA ESTEJA NO UM N√ÉO E MAIS PRECISO CONTINUAR DIVIDINDO AI E FEITO O INSERTION PARA TERMINAR A ORGANIZA√á√ÉO
 	if(intervalo == 1){
 		for(contador2 = 0; contador2 < tamanho; contador2++){
 			
@@ -46,7 +47,7 @@ void shell_sort(int *vetor, int tamanho){
 					
 					
 				
-				//VEIFICANDO SE HA NUMEROS MAIORES NAS POSI«OES ANTERIORES
+				//VEIFICANDO SE HA NUMEROS MAIORES NAS POSI√áOES ANTERIORES
 				for(contador3 = contador2+1; contador3 >= 0; contador3--){
 					 inicio = contador3 - 1;
 			
@@ -83,7 +84,7 @@ void shell_knuth(int *vetor, int tamanho){
 			final =0;
 			while(contador < tamanho && final < tamanho){
 									
-			//COMPARANDO AS POSI«OES, USANDO O INTERVALO COMO DISTANCIA ENTRE AS POSI«’ES
+			//COMPARANDO AS POSI√áOES, USANDO O INTERVALO COMO DISTANCIA ENTRE AS POSI√á√ïES
 				if(vetor[contador] > vetor[contador + intervalo]){
 				
 						aux_troca = vetor[contador];
@@ -115,7 +116,7 @@ void shell_knuth(int *vetor, int tamanho){
 						
 						
 					
-					//VEIFICANDO SE HA NUMEROS MAIORES NAS POSI«OES ANTERIORES
+					//VEIFICANDO SE HA NUMEROS MAIORES NAS POSI√áOES ANTERIORES
 					for(contador3 = contador2+1; contador3 >= 0; contador3--){
 						 inicio = contador3 - 1;
 				
